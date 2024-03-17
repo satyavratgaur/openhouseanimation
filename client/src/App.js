@@ -5,11 +5,14 @@ import Footer from './components/Footer';
 import HomePage from './components/HomePage';
 import WallOfFame from './components/WallOfFame';
 import './index.css';
+import Header from './components/Header/Header';
+import Projects from './components/Projects/Projects';
 
 function App() {
   return (
     <Router>
       <div className='flex flex-col min-h-screen'>
+        <Header />
         <Navbar />
         <main className='flex-grow'>
           <Routes>
@@ -18,6 +21,7 @@ function App() {
             {/* Define other routes here */}
           </Routes>
         </main>
+        <Projects />
         <Footer />
       </div>
     </Router>
